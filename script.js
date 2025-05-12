@@ -206,6 +206,11 @@ else if (age <= 60){
     console.log("The price of your ticket is 20")
 }
 
+else if (isNaN(age)){
+    alert(`Invalid input. Enter a valid age`)
+    console.log(`Invalid input. Enter a valid age`)
+}
+
 else {
     alert(`The price of your ticket is 15`);
     console.log("The price of your ticket is 15")
@@ -219,7 +224,12 @@ const leapYear = year%4;
 if(leapYear === 0){
     alert(`This is a leap year`)
     console.log(` This is a leapyear`)
-} else{
+} else if(isNaN(leapYear)){
+    alert(`Invalid input. Enter a valid year`)
+    console.log(`Invalid input. Enter a valid year`)
+}
+
+else{
     alert(`This is not a leap year`)
     console.log(`This is not a leap year`)
 }
@@ -238,6 +248,9 @@ if(amount >= 100){
 else if (amount >= 50){
     alert(`you have earned a 10% discount on ${amount}`)
     console.log(`you have earned a 10% discount on ${amount}`)
+}else if (isNaN (amount)){
+    alert(`Invalid input. Enter a valid number`)
+    console.log(`Invalid input. Enter a valid number`)
 }
 else{
     alert(`you have earned 0% discount on ${amount}`)
